@@ -24,17 +24,17 @@ endif
 .PHONY: all clean
 
 all: target
-    @echo done
+	@echo done
 
 clean:
-    @rm -f target *.c
+	@rm -f target *.c
 
 # dummy build rules
 
 target: a.c b.c c.c d.c e.c f.c g.c
-    @touch $@
-    $(BUILD)
+	@touch $@
+	$(BUILD)
 
 %.c:
-    @touch $@
-    $(BUILD)
+	@touch $@
+	$(BUILD)
